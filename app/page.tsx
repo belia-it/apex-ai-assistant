@@ -103,10 +103,10 @@ function Navbar() {
           ))}
         </div>
         <div className="hidden md:flex items-center gap-3">
-          <a href="#" className="text-[#9595B0] hover:text-[#FAFAFA] text-sm transition-colors duration-200 cursor-pointer">Sign in</a>
-          <a href="#cta" className="bg-[#A78BFA] hover:bg-[#9166E8] text-[#0A0A0F] font-semibold text-sm px-4 py-2 rounded-xl transition-colors duration-200 cursor-pointer active:scale-95 inline-block">
+          {/* <a href="#" className="text-[#9595B0] hover:text-[#FAFAFA] text-sm transition-colors duration-200 cursor-pointer">Sign in</a> */}
+          {/* <a href="#cta" className="bg-[#A78BFA] hover:bg-[#9166E8] text-[#0A0A0F] font-semibold text-sm px-4 py-2 rounded-xl transition-colors duration-200 cursor-pointer active:scale-95 inline-block">
             Get Started Free
-          </a>
+          </a> */}
         </div>
         <button onClick={() => setOpen(!open)}
           className="md:hidden text-[#9595B0] hover:text-[#FAFAFA] transition-colors duration-200 cursor-pointer p-1"
@@ -123,10 +123,10 @@ function Navbar() {
               {l}
             </a>
           ))}
-          <a href="#cta" onClick={() => setOpen(false)}
+          {/* <a href="#cta" onClick={() => setOpen(false)}
              className="mt-3 block text-center bg-[#A78BFA] text-[#0A0A0F] font-semibold text-sm px-4 py-2.5 rounded-xl cursor-pointer">
             Get Started Free
-          </a>
+          </a> */}
         </div>
       )}
     </nav>
@@ -164,10 +164,10 @@ function Hero() {
             and complex SQL queries from plain English. No documentation hunting required.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mb-10">
-            <a href="#cta"
+            {/* <a href="#cta"
                className="flex items-center justify-center gap-2 bg-[#A78BFA] hover:bg-[#9166E8] text-[#0A0A0F] font-bold px-6 py-3.5 rounded-xl transition-colors duration-200 cursor-pointer active:scale-95 text-base">
               Start Free Trial <IconArrowRight />
-            </a>
+            </a> */}
             <a href="#how-it-works"
                className="flex items-center justify-center gap-2 bg-[#1A1A2E] hover:bg-[#252542] text-[#FAFAFA] border border-[#252542] font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 cursor-pointer text-base">
               See it in Action <IconArrowRight />
@@ -436,6 +436,7 @@ function CTASection() {
             <p className="text-[#9595B0] text-lg mb-8 max-w-xl mx-auto">
               Join Oracle APEX developers who ship features faster with AI-generated code. Free for 14 days — no credit card required.
             </p>
+            {/* CTA buttons — hidden until auth is ready
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
               <a href="#"
                  className="flex items-center justify-center gap-2 bg-[#A78BFA] hover:bg-[#9166E8] text-[#0A0A0F] font-bold px-8 py-3.5 rounded-xl transition-colors duration-200 cursor-pointer active:scale-95 text-base">
@@ -446,6 +447,7 @@ function CTASection() {
                 Book a Demo
               </a>
             </div>
+            */}
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-[#9595B0]">
               {checks.map((item) => (
                 <div key={item} className="flex items-center gap-1.5">
