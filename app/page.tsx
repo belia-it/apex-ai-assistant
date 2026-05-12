@@ -465,20 +465,14 @@ function CTASection() {
 
 /* ── FOOTER ── */
 function Footer() {
-  const links = ["Features", "Pricing", "Docs", "Blog", "Privacy", "Terms"];
   return (
     <footer className="border-t border-[#1A1A2E] py-10">
-      <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 bg-[#A78BFA] rounded-lg flex items-center justify-center text-[#0A0A0F]">
             <IconBolt className="w-3.5 h-3.5" />
           </div>
           <span className="font-bold text-[#FAFAFA]">APEX AI</span>
-        </div>
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-[#9595B0]">
-          {links.map((l) => (
-            <a key={l} href="#" className="hover:text-[#FAFAFA] transition-colors duration-200 cursor-pointer">{l}</a>
-          ))}
         </div>
         <p className="text-[#9595B0] text-sm">&copy; 2026 APEX AI. All rights reserved.</p>
       </div>
