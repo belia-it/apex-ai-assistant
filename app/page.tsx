@@ -168,7 +168,7 @@ function Hero() {
                className="flex items-center justify-center gap-2 bg-[#A78BFA] hover:bg-[#9166E8] text-[#0A0A0F] font-bold px-6 py-3.5 rounded-xl transition-colors duration-200 cursor-pointer active:scale-95 text-base">
               Start Free Trial <IconArrowRight />
             </a> */}
-            <a href="#how-it-works"
+            <a href="#demo"
                className="flex items-center justify-center gap-2 bg-[#1A1A2E] hover:bg-[#252542] text-[#FAFAFA] border border-[#252542] font-semibold px-6 py-3.5 rounded-xl transition-colors duration-200 cursor-pointer text-base">
               See it in Action <IconArrowRight />
             </a>
