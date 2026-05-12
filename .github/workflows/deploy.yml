@@ -34,6 +34,8 @@ jobs:
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
-      - name: Deploy via Coolify webhook
+      - name: Trigger Coolify deploy
         run: |
-          curl -fsSL -X GET "${{ secrets.COOLIFY_WEBHOOK_URL }}"
+          curl -fsSL -X GET \
+            -H "Authorization: Bearer ${{ secrets.COOLIFY_TOKEN }}" \
+            "http://${{ secrets.VPS_HOST }}:8000/api/v1/deploy?uuid=${{ secrets.COOLIFY_APP_UUID }}&force=false"
