@@ -173,14 +173,7 @@ function Hero() {
               See it in Action <IconArrowRight />
             </a>
           </div>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-[#9595B0]">
-            {["No credit card required", "14-day free trial", "APEX 23.x & 24.x"].map((item) => (
-              <div key={item} className="flex items-center gap-1.5">
-                <span className="text-[#A78BFA]"><IconCheck className="w-3.5 h-3.5" /></span>
-                {item}
-              </div>
-            ))}
-          </div>
+
         </div>
         {/* Code mockup */}
         <div className="relative">
@@ -421,7 +414,6 @@ function HowItWorks() {
 
 /* ── CTA ── */
 function CTASection() {
-  const checks = ["14-day free trial", "No credit card", "Cancel anytime", "APEX 24.x support"];
   return (
     <section id="cta" className="py-20">
       <div className="max-w-4xl mx-auto px-4 md:px-6">
@@ -434,7 +426,7 @@ function CTASection() {
             </div>
             <h2 className="font-bold text-3xl md:text-4xl mb-4">Start building faster today</h2>
             <p className="text-[#9595B0] text-lg mb-8 max-w-xl mx-auto">
-              Join Oracle APEX developers who ship features faster with AI-generated code. Free for 14 days — no credit card required.
+              Join Oracle APEX developers who ship features faster with AI-generated code.
             </p>
             {/* CTA buttons — hidden until auth is ready
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
@@ -448,14 +440,7 @@ function CTASection() {
               </a>
             </div>
             */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-[#9595B0]">
-              {checks.map((item) => (
-                <div key={item} className="flex items-center gap-1.5">
-                  <span className="text-[#A78BFA]"><IconCheck /></span>
-                  {item}
-                </div>
-              ))}
-            </div>
+
           </div>
         </div>
       </div>
